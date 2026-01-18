@@ -269,7 +269,7 @@ body {
         padding: 0 15px;
     }
     .item-gallery {
-        flex: 0 0 48%;
+        flex: 0 0 100%;
     }
 }
 /* @media (max-width: 812px) {
@@ -302,4 +302,5 @@ body {
     .header_title {
         font-size: 36px;
     }
+
 }
