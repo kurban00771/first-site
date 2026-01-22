@@ -4,113 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="description" content="Профессиональный тату салон. Мастер татуировок с 2018 года.">
+    <title>Тату Салон - Арсен</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-
 
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <h1 class="header_title">Digital Marketing Agency</h1>
-            <p class="header_text">Award winning digital marketing agency in Singapore. A home-grown company since 2018.</p>
-            <a href="#form" class="header_button">Find out more</a>
+            <h1 class="header__title">Digital Marketing Agency</h1>
+            <p class="header__text">Award winning digital marketing agency in Singapore. A home-grown company since 2018.</p>
+            <button class="header__button" onclick="scrollToForm()">Find out more</button>
         </div>
     </header>
-    <!-- Services -->
-    <section class="services">
-        <div class="block">
-            <h2 class="block_title">Our services</h2>
-            <p class="block_text">Increase your insight and make the better experience with our  valuable services.</p>
-        </div>
-        <div class="services_items">
-            <a href="https://max.ru" target="_blank"
-                rel="noopener" class="item">
-                <img class="services_items_img" src="img/max.png" alt="Max">
-                <h3 class="services_items_title">Max</h3>
-            </a>
 
-            <a href="https://t.me" target="_blank" rel="noopener" class="item">
-                <img class="services_items_img" src="img/telegram.png" alt="Telegram">
-                <h3 class="services_items_title">Telegram</h3>
-            </a>
-
-            <a href="https://www.instagram.com" target="_blank"
-                rel="noopener" class="item">
-                <img class="services_items_img" src="img/instagram.png" alt="Instagram">
-                <h3 class="services_items_title">Instagram</h3>
-            </a>
-
-        </div>
-    </section>
-    <!-- Team -->
-    <section class="team">
+    <!-- Social Links -->
+    <section class="social">
         <div class="container">
-            <div class="block">
-                <h2 class="block_title">our talented member</h2>
-                <p class="block_text">Increase your insight and make the better experience with our  valuable services.</p>
-            </div>
+            <header class="social__header">
+                <h2 class="section-title">Our services</h2>
+                <p class="section-subtitle">Increase your insight and make the better experience with our  valuable services.</p>
+            </header>
+            <nav class="social__links">
+                <a href="https://max.ru/u/f9LHodD0cOKcx3s0chEJwqiy_aKCNOyYdCxf5fW6uCZlrY0yFa5h6N2wCVk" 
+                   target="_blank" rel="noopener noreferrer" class="social__item" aria-label="Max">
+                    <img class="social__icon" src="img/max.png" alt="Max">
+                    <span>Max</span>
+                </a>
+                <a href="https://t.me/ars_taty" 
+                   target="_blank" rel="noopener noreferrer" class="social__item" aria-label="Telegram">
+                    <img class="social__icon" src="img/telegram.png" alt="Telegram">
+                    <span>Telegram</span>
+                </a>
+                <a href="https://www.instagram.com/ars_a.m?igsh=NmV4NHA4NmJscHRm&utm_source=qr" 
+                   target="_blank" rel="noopener noreferrer" class="social__item" aria-label="Instagram">
+                    <img class="social__icon" src="img/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+            </nav>
         </div>
     </section>
 
-    <!-- Pictures -->
-    <section class="pictures" id="form">
+    <!-- About Master -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">our talented member</h2>
+            <p class="section-subtitle">
+                Increase your insight and make the better experience with our  valuable services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="form">
         <div class="container">
             <div class="gallery">
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 1"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 2"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 3"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 4"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 5"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 6"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 7"></div>
-                <div class="item-gallery"><img src="img/wallpaper.jpg" alt="Фото 8"></div>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 1">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 2">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 3">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 4">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 5">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 6">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 7">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="img/wallpaper.jpg" alt="Работа 8">
+                </figure>
             </div>
         </div>
     </section>
+
+    <!-- Feedback Form -->
     <section class="feedback">
         <div class="container">
             <div class="form-container">
                 <h2>Оставьте свои данные</h2>
                 <p>Мы свяжемся с вами в ближайшее время</p>
-
-                <form action="#" method="POST">
-                    <div class="input-group">
-                        <label for="name">Имя</label>
-                        <input type="text" id="name" name="name" placeholder="Введите имя" required spellcheck="false"
-                            autocomplete="name" autocorrect="off" autocapitalize="off">
+                
+                <form action="#" method="POST" class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Имя</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Введите имя" 
+                            required 
+                            spellcheck="false"
+                            autocomplete="name" 
+                            class="form__input">
                     </div>
 
-                    <div class="input-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required
-                            inputmode="numeric" pattern="^\+?[0-9]{1,15}$" maxlength="18"
-                            title="Введите номер, например: +79991234567">
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Телефон</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+7 (999) 999-99-99" 
+                            required 
+                            inputmode="numeric" 
+                            pattern="^\+?[0-9]{1,15}$" 
+                            maxlength="18"
+                            title="Введите номер, например: +79991234567" 
+                            class="form__input">
                     </div>
 
-                    <button type="submit">Отправить</button>
+                    <button type="submit" class="form__submit">Отправить</button>
                 </form>
 
-                <!-- Текст о согласии -->
                 <p class="privacy-text">
                     Нажимая кнопку «Отправить», вы соглашаетесь с
-                    <a href="privacy.html" target="_blank">политикой конфиденциальности</a>
+                    <a href="privacy.html" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a>
                     и даёте согласие на обработку персональных данных.
                 </p>
             </div>
 
+            <button class="btn-up" onclick="scrollToTop()" aria-label="Вернуться в начало">&uarr;</button>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025. Created with care for customers</p>
+            <p>&copy; 2026. Created with care for customers</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
