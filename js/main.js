@@ -1,21 +1,26 @@
+/* В файле js/main.js: */
+
+function clearUrlHash() {
+    // Единая функция для очистки URL от хеша без таймаута
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+}
+
 function scrollToForm() {
     const target = document.getElementById('form');
     if (target) {
-        // Плавная прокрутка
-        target.scrollIntoView({ behavior: 'smooth' });
-        // Удаляем #form из URL после прокрутки
-        setTimeout(() => {
-            history.replaceState(null, null, window.location.pathname + window.location.search);
-        }, 600); // 600мс — чуть больше времени анимации
+        target.scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+        // Вызываем сразу после начала скролла
+        clearUrlHash(); 
     }
 }
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-    // Удаляем # из URL (если был)
-    setTimeout(() => {
-        history.replaceState(null, null, window.location.pathname + window.location.search);
-    }, 600);
+    // Вызываем сразу после начала скролла
+    clearUrlHash();
 }
